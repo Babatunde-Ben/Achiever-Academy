@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Achiever-Academy/static/css/main.08203ecc.css",
+    "main.js": "/Achiever-Academy/static/js/main.25e06417.js",
+    "index.html": "/Achiever-Academy/index.html",
+    "main.08203ecc.css.map": "/Achiever-Academy/static/css/main.08203ecc.css.map",
+    "main.25e06417.js.map": "/Achiever-Academy/static/js/main.25e06417.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08203ecc.css",
+    "static/js/main.25e06417.js"
+  ]
+}
