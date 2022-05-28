@@ -1,0 +1,56 @@
+.login-section {
+  padding: 80px 40px 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.login-section > img {
+  width: 45%;
+  min-width: 380px;
+}
+.login-section .title {
+  text-align: center;
+}
+.login-section > div {
+  background-color: rgb(234, 234, 234);
+  text-align: center;
+  padding: 20px;
+  width: 45%;
+  min-width: 380px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-section .sign-in-auth {
+  padding: 10px 15px;
+  text-transform: capitalize;
+  background-color: #c4c4c4;
+  font-weight: 600;
+  border: none;
+  margin-top: 40px;
+  cursor: pointer;
+  color: var(--color3);
+  display: flex;
+}
+
+.login-section .sign-in-auth:hover {
+  background-color: #adadad;
+}
+
+@media screen and (max-width: 480px) {
+  .login-section {
+    gap: 40px;
+    padding: 50px 10px 20px;
+  }
+  .login-section > img {
+    min-width: 90vw;
+  }
+  .login-section > div {
+    min-width: 90vw;
+    /* background-color: red; */
+  }
+}

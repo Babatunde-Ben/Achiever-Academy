@@ -1,6 +1,5 @@
 import React from "react";
-import "../css/hero.css";
-import LoginButton from "./LoginButton";
+import "../css/Hero.css";
 import student from "../images/student-in-library.jpg";
 import "../css/Navbar.css";
 
@@ -17,7 +16,6 @@ const Hero = () => {
           temporibus totam iste atque, maiores in a itaque iusto reprehenderit
           unde qui alias facilis cum nesciunt. Magni!
         </h4>
-        <LoginButton />
       </article>
       <div className="img-container">
         <img src={student} alt="student in the library" />
