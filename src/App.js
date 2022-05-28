@@ -11,7 +11,7 @@ function App() {
   const [userState, setUserState] = useState(false);
   return (
     <div className="App">
-      <BrowserRouter basname="Achiever-Academy">
+      <BrowserRouter>
         <Navbar userState={userState} />
 
         <Routes>

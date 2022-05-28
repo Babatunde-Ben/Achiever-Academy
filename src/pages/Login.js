@@ -1,4 +1,5 @@
 import React from "react";
+import { FcGoogle } from "react-icons/fc";
 import "../css/Login.css";
 import StudentLogin from "../images/student-login.svg";
 
@@ -14,7 +15,7 @@ const Login = () => {
         <h2 className="title">Student Login</h2>
         <p>Make sure you account is secure</p>
         <button className="sign-in-auth" onClick={handleGoggleAuth}>
-          Login with Google
+          Login with Google <FcGoogle />
         </button>
       </div>
     </section>
