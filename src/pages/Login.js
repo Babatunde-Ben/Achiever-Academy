@@ -5,7 +5,6 @@ import StudentLogin from "../images/student-login.svg";
 
 const Login = () => {
   const handleGoggleAuth = () => {
-    console.log();
     alert("Signed In");
   };
   return (
