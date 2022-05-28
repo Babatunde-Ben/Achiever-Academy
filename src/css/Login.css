@@ -27,6 +27,7 @@
 
 .login-section .sign-in-auth {
   padding: 10px 15px;
+  line-height: 20px;
   text-transform: capitalize;
   background-color: #c4c4c4;
   font-weight: 600;
@@ -35,10 +36,17 @@
   cursor: pointer;
   color: var(--color3);
   display: flex;
+  border-radius: 3px;
 }
 
 .login-section .sign-in-auth:hover {
   background-color: #adadad;
+}
+.login-section .google-icon {
+  /* background-color: red; */
+  transform: translateY(-3px);
+  margin-left: 10px;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 480px) {
