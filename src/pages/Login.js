@@ -10,6 +10,7 @@ const Login = () => {
     alert("Signed In");
     navigate("/student");
   };
+
   return (
     <section className="login-section">
       <img src={StudentLogin} alt="" />

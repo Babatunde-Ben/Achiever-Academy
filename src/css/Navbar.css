@@ -6,6 +6,7 @@
   box-shadow: 0 0 20px #bababa;
   height: 10vh;
   width: 100%;
+  margin-bottom: 3px;
 }
 .navbar .logo {
   font-size: 1.2rem;

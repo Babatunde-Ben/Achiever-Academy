@@ -1,0 +1,14 @@
+.student-page {
+  background-color: antiquewhite;
+  background-color: white;
+}
+.student-page div:nth-child(1) {
+  background-color: blueviolet;
+  width: 100px;
+  height: 400px;
+}
+.student-page div:nth-child(2) {
+  background-color: aqua;
+  width: 200px;
+  height: 400px;
+}
