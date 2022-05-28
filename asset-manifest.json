@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Achiever-Academy/static/css/main.41371182.css",
-    "main.js": "/Achiever-Academy/static/js/main.b31c12b9.js",
+    "main.js": "/Achiever-Academy/static/js/main.d8df4059.js",
     "static/media/student-in-library.jpg": "/Achiever-Academy/static/media/student-in-library.ae18475407921bce4cbe.jpg",
     "static/media/student-login.svg": "/Achiever-Academy/static/media/student-login.e1b06e5197feadd8a86828308a394dc8.svg",
     "index.html": "/Achiever-Academy/index.html",
     "main.41371182.css.map": "/Achiever-Academy/static/css/main.41371182.css.map",
-    "main.b31c12b9.js.map": "/Achiever-Academy/static/js/main.b31c12b9.js.map"
+    "main.d8df4059.js.map": "/Achiever-Academy/static/js/main.d8df4059.js.map"
   },
   "entrypoints": [
     "static/css/main.41371182.css",
-    "static/js/main.b31c12b9.js"
+    "static/js/main.d8df4059.js"
   ]
 }
