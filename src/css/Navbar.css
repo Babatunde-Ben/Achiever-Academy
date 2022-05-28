@@ -1,0 +1,23 @@
+.navbar {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 20px #bababa;
+  height: 4vh;
+}
+.navbar .logo {
+  font-size: 1.2rem;
+  color: var(--color3);
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 20px #bababa;
+    height: 4vh;
+  }
+}
