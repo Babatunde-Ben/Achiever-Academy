@@ -1,6 +1,5 @@
 .hero-section {
   padding: 50px 40px;
-  height: calc(100vh - 30vh);
   display: flex;
   justify-content: space-around;
   align-items: center;
