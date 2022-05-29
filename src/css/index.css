@@ -30,7 +30,16 @@ code {
 }
 .title {
   font-weight: 800;
-  font-size: 30px;
+  font-size: 35px;
   margin-bottom: 10px;
   color: var(--color3);
+}
+.sidebar-article {
+  padding: 50px 70px;
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar-article {
+    padding: 20px 20px;
+  }
 }

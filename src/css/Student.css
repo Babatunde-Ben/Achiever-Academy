@@ -1,9 +1,3 @@
 .student-page {
   display: flex;
 }
-
-.student-page div:nth-child(2) {
-  background-color: aqua;
-  width: 200px;
-  height: 400px;
-}

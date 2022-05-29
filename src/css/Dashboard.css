@@ -1,0 +1,37 @@
+.dashboard-section {
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.dashboard-section .desc {
+  line-height: 30px;
+  margin: 10px 0;
+}
+.dashboard-section .tour-btn {
+  outline: none;
+  border: none;
+  font-size: 18px;
+  padding: 8px 15px;
+  background-color: var(--color4);
+  color: var(--color1);
+  margin: 20px 0;
+}
+.dashboard-section img {
+  width: 500px;
+}
+
+@media screen and (max-width: 480px) {
+  .dashboard-section {
+    width: 100%;
+    gap: 10px;
+  }
+  .dashboard-section .tour-btn {
+    margin: 10px 0;
+  }
+  .dashboard-section img {
+    width: 230px;
+  }
+}

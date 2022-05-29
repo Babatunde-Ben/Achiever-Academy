@@ -25,3 +25,19 @@
   background-color: var(--color1);
   color: var(--color2);
 }
+
+@media screen and (max-width: 480px) {
+  .sidebar-section {
+    height: calc(100vh - 10vh);
+    width: 150px;
+    padding: 10px;
+  }
+  .sidebar-section li {
+    margin: 40px 0;
+    font-size: 18px;
+  }
+  .sidebar-section .log-out-btn {
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+}

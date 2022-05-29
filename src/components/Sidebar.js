@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar-section">
+    <section className="sidebar-section">
       <li>
         <NavLink to="/student/dashboard">Dashboard</NavLink>
       </li>
@@ -19,8 +19,7 @@ const Sidebar = () => {
           <button className="log-out-btn">Log Out</button>
         </NavLink>
       </li>
-      <li></li>
-    </div>
+    </section>
   );
 };
 
