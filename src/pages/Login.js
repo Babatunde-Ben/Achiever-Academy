@@ -21,7 +21,7 @@ const Login = () => {
   const handleGoggleAuth = () => {
     // alert("Signed In");
     setUserState(true);
-    navigate("/student");
+    navigate("/student/dashboard");
   };
 
   return (
