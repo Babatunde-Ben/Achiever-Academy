@@ -10,6 +10,7 @@ import Student from "./pages/Student";
 
 function App() {
   const [userState, setUserState] = useState(false);
+
   return (
     <div className="App">
       <BrowserRouter basename="/">
@@ -17,7 +18,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login userState={userState} />} />
           <Route path="/student" element={<Student />}>
             <Route path="dashboard" element={<h1>Dashboard</h1>} />
             <Route path="courses" element={<h1>Courses</h1>} />

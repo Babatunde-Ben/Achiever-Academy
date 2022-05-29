@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { useNavigate } from "react-router-dom";
 import "../css/Login.css";
 import StudentLogin from "../images/student-login.svg";
 
 const Login = () => {
+  const [userState, setUserState] = useState(false);
   let navigate = useNavigate();
+
+  useEffect(() => {
+    const status = JSON.parse(localStorage.getItem("access"));
+    console.log("status is", status);
+    setUserState(status);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("access", JSON.stringify(userState));
+  }, [userState]);
+
   const handleGoggleAuth = () => {
-    alert("Signed In");
+    // alert("Signed In");
+    setUserState(true);
     navigate("/student");
   };
 

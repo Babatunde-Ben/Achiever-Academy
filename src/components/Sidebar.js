@@ -14,6 +14,12 @@ const Sidebar = () => {
       <li>
         <NavLink to="/student/profile">Profile</NavLink>
       </li>
+      <li>
+        <NavLink to="/">
+          <button className="log-out-btn">Log Out</button>
+        </NavLink>
+      </li>
+      <li></li>
     </div>
   );
 };
