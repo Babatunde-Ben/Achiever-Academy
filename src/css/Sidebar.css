@@ -15,7 +15,9 @@
 }
 .sidebar-section li a {
   color: var(--color1);
+  width: 100%;
 }
+
 .sidebar-section .log-out-btn {
   padding: 8px 15px;
   border: none;
