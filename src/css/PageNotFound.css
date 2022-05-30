@@ -1,0 +1,20 @@
+.error-page-section {
+  padding: 80px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 200px);
+}
+
+.error-page-section .error-icon {
+  font-size: 100px;
+  color: #e33434;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .error-page-section {
+    padding: 50px 10px 20px;
+  }
+}

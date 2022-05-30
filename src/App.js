@@ -10,6 +10,7 @@ import Student from "./pages/Student";
 import Dashboard from "./pages/Dashboard";
 import Courses from "./pages/Courses";
 import Profile from "./pages/Profile";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   const [userState, setUserState] = useState(false);
@@ -29,7 +30,7 @@ function App() {
               <Route path=":userId" element={<Courses />} />
             </Route>
           </Route>
-          <Route path="*" element={<h2>Page Not Found</h2>} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
