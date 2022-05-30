@@ -5,8 +5,8 @@
   font-size: 1rem;
   color: var(--color1);
   border: none;
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
   border-radius: 3px;
   transition: all 0.2s linear;
 }

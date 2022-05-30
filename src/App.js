@@ -24,9 +24,12 @@ function App() {
           <Route path="/login" element={<Login userState={userState} />} />
           <Route path="/student" element={<Student />}>
             <Route path="dashboard" element={<Dashboard />} />
-            <Route path="courses" element={<Courses />} />
             <Route path="profile" element={<Profile />} />
+            <Route path="courses" element={<Courses />}>
+              <Route path=":userId" element={<Courses />} />
+            </Route>
           </Route>
+          <Route path="*" element={<h2>Page Not Found</h2>} />
         </Routes>
       </BrowserRouter>
     </div>
