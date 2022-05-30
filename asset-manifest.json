@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Achiever-Academy/static/css/main.557ffd32.css",
-    "main.js": "/Achiever-Academy/static/js/main.d7301b30.js",
+    "main.css": "/Achiever-Academy/static/css/main.d14c62b6.css",
+    "main.js": "/Achiever-Academy/static/js/main.2c2c6278.js",
     "static/media/student-in-library.jpg": "/Achiever-Academy/static/media/student-in-library.ae18475407921bce4cbe.jpg",
     "static/media/student-login.svg": "/Achiever-Academy/static/media/student-login.e1b06e5197feadd8a86828308a394dc8.svg",
     "static/media/dashboard.svg": "/Achiever-Academy/static/media/dashboard.8297fbc1a597586222475694bf5711d1.svg",
     "index.html": "/Achiever-Academy/index.html",
-    "main.557ffd32.css.map": "/Achiever-Academy/static/css/main.557ffd32.css.map",
-    "main.d7301b30.js.map": "/Achiever-Academy/static/js/main.d7301b30.js.map"
+    "main.d14c62b6.css.map": "/Achiever-Academy/static/css/main.d14c62b6.css.map",
+    "main.2c2c6278.js.map": "/Achiever-Academy/static/js/main.2c2c6278.js.map"
   },
   "entrypoints": [
-    "static/css/main.557ffd32.css",
-    "static/js/main.d7301b30.js"
+    "static/css/main.d14c62b6.css",
+    "static/js/main.2c2c6278.js"
   ]
 }
