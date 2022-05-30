@@ -6,7 +6,7 @@ const Profile = () => {
   return (
     <section className="sidebar-article profile-section">
       <ProfilePicture />
-      <h2 className="user-name title">John Doe</h2>
+      <h2 className="user-name title">Becca Doe</h2>
       <p className="email">email@email.com</p>
     </section>
   );

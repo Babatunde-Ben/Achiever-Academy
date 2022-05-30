@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="Achiever-Academy">
         <Navbar userState={userState} />
 
         <Routes>
