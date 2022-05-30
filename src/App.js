@@ -14,12 +14,14 @@ import PageNotFound from "./pages/PageNotFound";
 import Footer from "./components/Footer";
 
 function App() {
-  const [userState, setUserState] = useState(false);
-
+  const state = localStorage.getItem("user");
+  const [userState, setUserState] = useState(state);
+  console.log("logged in user is :", userState);
+  // JSON.parse(localStorage.getItem("user")).email
   return (
     <div className="App">
       <BrowserRouter basename="Achiever-Academy">
-        <Navbar userState={userState} />
+        {!userState && <Navbar />}
 
         <Routes>
           <Route path="/" element={<LandingPage />} />

@@ -4,24 +4,37 @@ import { useNavigate } from "react-router-dom";
 import "../css/Login.css";
 import StudentLogin from "../images/student-login.svg";
 
+// firebase
+import { signInWithPopup } from "firebase/auth";
+import { auth, provider } from "../components/firebase";
+
 const Login = () => {
-  const [userState, setUserState] = useState(false);
   let navigate = useNavigate();
 
-  useEffect(() => {
-    const status = JSON.parse(localStorage.getItem("access"));
-    console.log("status is", status);
-    setUserState(status);
-  }, []);
+  // useEffect(() => {
+  //   const status = JSON.parse(localStorage.getItem("access"));
+  //   console.log("status is", status);
+  //   setUserState(status);
+  // }, []);
 
-  useEffect(() => {
-    localStorage.setItem("access", JSON.stringify(userState));
-  }, [userState]);
+  // useEffect(() => {
+  //   localStorage.setItem("access", JSON.stringify(userState));
+  // }, [userState]);
 
-  const handleGoggleAuth = () => {
+  const handleGoggleAuth = (e) => {
     // alert("Signed In");
-    setUserState(true);
-    navigate("/student/dashboard");
+    e.preventDefault();
+
+    signInWithPopup(auth, provider)
+      .then((res) => {
+        // console.log(res.user);
+        // console.log(res.user.email);
+        localStorage.setItem("user", JSON.stringify(res.user));
+        navigate("/student/dashboard");
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
   };
 
   return (
