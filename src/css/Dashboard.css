@@ -2,9 +2,9 @@
   /* background-color: red; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
-  /* gap: 20px; */
+  gap: 25px;
 }
 .dashboard-section .desc {
   line-height: 30px;
@@ -34,7 +34,7 @@
 @media screen and (max-width: 480px) {
   .dashboard-section {
     width: 100%;
-    gap: 10px;
+    /* gap: 10px; */
   }
   .dashboard-section .tour-btn {
     margin: 10px 0;
