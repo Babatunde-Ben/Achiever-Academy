@@ -1,0 +1,23 @@
+.course {
+  background-color: #cbcbcb;
+  border-radius: 10px;
+  width: 200px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  transition: background 0.3s linear;
+}
+.course:hover {
+  background-color: #b0b0b0;
+}
+.course-icon {
+  width: 60px;
+}
+.course-name {
+  color: var(--color3);
+  text-transform: capitalize;
+}

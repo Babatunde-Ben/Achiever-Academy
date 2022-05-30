@@ -26,14 +26,19 @@
   font-size: 20px;
   background-color: var(--color1);
   color: var(--color2);
+  cursor: pointer;
 }
-
+.sidebar-section .log-out-btn:hover {
+  background-color: #e4e4e4;
+  transition: background 0.3s linear;
+}
 @media screen and (max-width: 480px) {
   .sidebar-section {
     height: calc(100vh - 10vh);
     width: 150px;
     padding: 10px;
   }
+
   .sidebar-section li {
     margin: 40px 0;
     font-size: 18px;

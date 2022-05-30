@@ -1,9 +1,8 @@
 .dashboard-section {
   /* background-color: red; */
-  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   /* gap: 20px; */
 }
@@ -14,6 +13,7 @@
 .dashboard-section .tour-btn {
   outline: none;
   border: none;
+  cursor: pointer;
   font-size: 18px;
   padding: 8px 15px;
   background-color: var(--color4);
@@ -21,7 +21,6 @@
   margin: 20px 0;
 }
 .dashboard-section .article {
-  /* background-color: rebeccapurple; */
   width: 350px;
 }
 .dashboard-section img {

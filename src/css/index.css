@@ -36,6 +36,7 @@ code {
 }
 .sidebar-article {
   padding: 50px 70px;
+  width: 100%;
 }
 
 @media screen and (max-width: 480px) {
