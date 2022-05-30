@@ -15,18 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <h1
-        className="logo"
-        onClick={() => {
-          if (userState) {
-            setUserState(false);
-          } else {
-            setUserState(true);
-          }
-        }}
-      >
-        Achiever's Academy
-      </h1>
+      <h1 className="logo">Achiever's Academy</h1>
       {!userState && <LoginButton />}
     </nav>
   );

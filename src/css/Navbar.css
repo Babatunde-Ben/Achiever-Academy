@@ -7,10 +7,6 @@
   height: 70px;
   width: 100%;
 }
-.navbar .logo {
-  font-size: 1.2rem;
-  color: var(--color3);
-}
 
 @media screen and (max-width: 480px) {
   .navbar {

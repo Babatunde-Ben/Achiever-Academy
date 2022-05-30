@@ -11,6 +11,7 @@ import Dashboard from "./pages/Dashboard";
 import Courses from "./pages/Courses";
 import Profile from "./pages/Profile";
 import PageNotFound from "./pages/PageNotFound";
+import Footer from "./components/Footer";
 
 function App() {
   const [userState, setUserState] = useState(false);
@@ -32,6 +33,7 @@ function App() {
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

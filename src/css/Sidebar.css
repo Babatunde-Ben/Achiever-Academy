@@ -1,7 +1,7 @@
 .sidebar-section {
   color: white;
   background-color: var(--color2);
-  height: calc(100vh - 10vh);
+  height: calc(65vh);
   width: 200px;
   padding: 20px;
 }
@@ -13,24 +13,30 @@
   font-weight: 600;
   text-align: center;
 }
+.sidebar-section li a.active {
+  border: 2px solid var(--color1);
+}
+
 .sidebar-section li a {
   color: var(--color1);
   width: 100%;
+  padding: 5px 10px;
+  border-radius: 15px;
 }
 
 .sidebar-section .log-out-btn {
   padding: 8px 15px;
   border: none;
   outline: none;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 20px;
   background-color: var(--color1);
   color: var(--color2);
   cursor: pointer;
 }
 .sidebar-section .log-out-btn:hover {
-  background-color: #e4e4e4;
-  transition: background 0.3s linear;
+  background-color: #f6f6f6;
+  transition: background 0.2s linear;
 }
 @media screen and (max-width: 480px) {
   .sidebar-section {
