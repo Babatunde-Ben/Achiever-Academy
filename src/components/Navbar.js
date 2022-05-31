@@ -5,13 +5,11 @@ import LoginButton from "./LoginButton";
 
 import "../css/Navbar.css";
 
-const Navbar = () => {
-  const [userState, setUserState] = useState(false);
-  useEffect(() => {
-    setUserState(JSON.parse(localStorage.getItem("access")));
-  }, []);
-
-  console.log("navbar state", userState);
+const Navbar = ({ userState }) => {
+  // const [userState, setUserState] = useState(false);
+  // useEffect(() => {
+  //   setUserState(JSON.parse(localStorage.getItem("access")));
+  // }, []);
 
   return (
     <nav className="navbar">

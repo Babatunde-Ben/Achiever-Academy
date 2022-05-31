@@ -8,18 +8,16 @@ import StudentLogin from "../images/student-login.svg";
 import { signInWithPopup } from "firebase/auth";
 import { auth, provider } from "../components/firebase";
 
-const Login = () => {
+const Login = ({ updateState }) => {
   let navigate = useNavigate();
 
   const handleGoggleAuth = (e) => {
-    // alert("Signed In");
     e.preventDefault();
 
     signInWithPopup(auth, provider)
       .then((res) => {
-        // console.log(res.user);
-        // console.log(res.user.email);
         localStorage.setItem("user", JSON.stringify(res.user));
+        updateState();
         navigate("/student/dashboard");
       })
       .catch((err) => {

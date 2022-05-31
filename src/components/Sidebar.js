@@ -10,7 +10,7 @@ import { CgProfile } from "react-icons/cg";
 import { signOut } from "firebase/auth";
 import { auth } from "../components/firebase";
 
-const Sidebar = () => {
+const Sidebar = ({ updateState }) => {
   let navigate = useNavigate();
   const handleLogOut = (e) => {
     e.preventDefault();
@@ -18,9 +18,9 @@ const Sidebar = () => {
     signOut(auth)
       .then(() => {
         // Sign-out successful.
-        console.log(`user has been signe out`);
         localStorage.removeItem("user");
         navigate("/");
+        updateState();
       })
       .catch((err) => {
         // An error happened.
