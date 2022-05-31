@@ -8,6 +8,7 @@ const Profile = () => {
     const status = JSON.parse(localStorage.getItem("user"));
     setUserState(status);
   }, []);
+
   return (
     <section className="sidebar-article profile-section">
       <ProfilePicture link={userState.photoURL} />

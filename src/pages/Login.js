@@ -11,16 +11,6 @@ import { auth, provider } from "../components/firebase";
 const Login = () => {
   let navigate = useNavigate();
 
-  // useEffect(() => {
-  //   const status = JSON.parse(localStorage.getItem("access"));
-  //   console.log("status is", status);
-  //   setUserState(status);
-  // }, []);
-
-  // useEffect(() => {
-  //   localStorage.setItem("access", JSON.stringify(userState));
-  // }, [userState]);
-
   const handleGoggleAuth = (e) => {
     // alert("Signed In");
     e.preventDefault();

@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import "./css/App.css";
 
@@ -14,18 +14,14 @@ import PageNotFound from "./pages/PageNotFound";
 import Footer from "./components/Footer";
 
 function App() {
-  const state = localStorage.getItem("user");
-  const [userState, setUserState] = useState(state);
-  console.log("logged in user is :", userState);
-  // JSON.parse(localStorage.getItem("user")).email
   return (
     <div className="App">
       <BrowserRouter basename="Achiever-Academy">
-        {!userState && <Navbar />}
+        <Navbar />
 
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/login" element={<Login userState={userState} />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/student" element={<Student />}>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="profile" element={<Profile />} />
