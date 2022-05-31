@@ -50,4 +50,7 @@ code {
   .logo {
     font-size: 1rem;
   }
+  .title {
+    font-size: 25px;
+  }
 }

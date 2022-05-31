@@ -1,11 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../css/Footer.css";
 
 const Footer = () => {
   return (
     <section className="footer-section">
       <div>
-        <h1 className="footer-logo">Achiever's Academy</h1>
+        {" "}
+        <Link to="/">
+          <h1 className="footer-logo">Achiever's Academy</h1>
+        </Link>
       </div>
       <div>
         <h3 className="footer-title">stay connected</h3>
