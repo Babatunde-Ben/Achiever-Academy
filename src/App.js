@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import "./css/App.css";
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter basename="Achiever-Academy">
+      <HashRouter>
         <Navbar userState={userState} />
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -39,7 +39,7 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
