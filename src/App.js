@@ -21,25 +21,20 @@ function App() {
 
   return (
     <div className="App">
-      <HashRouter>
-        <Navbar userState={userState} />
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/login" element={<Login updateState={updateState} />} />
-          <Route
-            path="/student"
-            element={<Student updateState={updateState} />}
-          >
-            <Route path="dashboard" element={<Dashboard />} />
-            <Route path="profile" element={<Profile />} />
-            <Route path="courses" element={<Courses />}>
-              <Route path=":userId" element={<Courses />} />
-            </Route>
+      <Navbar userState={userState} />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<Login updateState={updateState} />} />
+        <Route path="/student" element={<Student updateState={updateState} />}>
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="courses" element={<Courses />}>
+            <Route path=":userId" element={<Courses />} />
           </Route>
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
-        <Footer />
-      </HashRouter>
+        </Route>
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
