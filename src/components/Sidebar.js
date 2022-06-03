@@ -30,16 +30,22 @@ const Sidebar = ({ updateState }) => {
   return (
     <section className="sidebar-section">
       <li>
-        <NavLink to="/student/dashboard">Dashboard</NavLink>
         <MdOutlineSpaceDashboard className="sidebar-icons" />
+        <NavLink to="/student/dashboard" className="sidebar-link">
+          Dashboard
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/student/courses">Courses</NavLink>
         <GiBlackBook className="sidebar-icons" />
+        <NavLink to="/student/courses" className="sidebar-link">
+          Courses
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/student/profile">Profile</NavLink>
         <CgProfile className="sidebar-icons" />
+        <NavLink to="/student/profile" className="sidebar-link">
+          Profile
+        </NavLink>
       </li>
       <li>
         <NavLink to="/">

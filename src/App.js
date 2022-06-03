@@ -26,11 +26,13 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login updateState={updateState} />} />
         <Route path="/student" element={<Student updateState={updateState} />}>
+          <Route path="/student/" element={<Dashboard />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="profile" element={<Profile />} />
           <Route path="courses" element={<Courses />}>
             <Route path=":userId" element={<Courses />} />
           </Route>
+          <Route path="*" element={<PageNotFound />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
