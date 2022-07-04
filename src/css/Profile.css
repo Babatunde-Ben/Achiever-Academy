@@ -4,3 +4,8 @@
   flex-direction: column;
   text-align: center;
 }
+.profile-section .profile-icon {
+  font-size: 100px;
+  margin-bottom: 15px;
+  color: var(--color3);
+}
