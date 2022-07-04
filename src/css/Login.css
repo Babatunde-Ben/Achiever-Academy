@@ -18,7 +18,7 @@
   padding: 20px;
   width: 45%;
   min-width: 380px;
-  height: 250px;
+  /* height: 250px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,19 +29,20 @@
   padding: 10px 15px;
   line-height: 20px;
   text-transform: capitalize;
-  background-color: #c4c4c4;
   font-weight: 600;
+  background: none;
   border: none;
   outline: none;
-  margin-top: 40px;
+  margin-top: 10px;
   cursor: pointer;
   color: var(--color3);
   display: flex;
   border-radius: 3px;
+  text-decoration: underline;
 }
 
 .login-section .sign-in-auth:hover {
-  background-color: #adadad;
+  /* background-color: red; */
 }
 .login-section .google-icon {
   transform: translateY(-3px);

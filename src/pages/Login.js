@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import LoginForm from "../components/LoginForm";
 import { FcGoogle } from "react-icons/fc";
 import { useNavigate } from "react-router-dom";
 import "../css/Login.css";
@@ -31,6 +32,8 @@ const Login = ({ updateState }) => {
       <div>
         <h2 className="title">Student Login</h2>
         <p>Make sure you account is secure</p>
+        <LoginForm updateState={updateState} />
+        <p>OR</p>
         <button className="sign-in-auth" onClick={handleGoggleAuth}>
           Login with Google <FcGoogle className="google-icon" />
         </button>
