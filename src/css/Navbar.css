@@ -14,15 +14,11 @@
   height: 60px;
   top: 0;
   left: 0;
+  z-index: 199;
 }
 
 @media screen and (max-width: 480px) {
   .navbar {
     padding: 20px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 0 20px #bababa;
-    height: 70px;
   }
 }

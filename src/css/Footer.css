@@ -7,7 +7,7 @@
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 50px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .footer-section div {
   width: 250px;

@@ -1,7 +1,12 @@
 .courses-list {
   margin-top: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 25px;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 760px) {
+  .courses-list {
+    justify-content: center;
+  }
 }

@@ -9,16 +9,16 @@ import "../css/Navbar.css";
 const Navbar = ({ userState }) => {
   // const [userState, setUserState] = useState(false);
 
-  // useEffect(() => {
-  //   setUserState(JSON.parse(localStorage.getItem("access")));
-  // }, []);
-  const navbar = document.querySelector(".navbar");
-  window.addEventListener("scroll", () => {
-    if (window.pageYOffset > 70) {
-      navbar?.classList.add("scroll");
-    } else {
-      navbar?.classList.remove("scroll");
-    }
+  useEffect(() => {
+    const navbar = document.querySelector(".navbar");
+    window.addEventListener("scroll", () => {
+      // console.log(window.pageYOffset);
+      if (window.pageYOffset > 10) {
+        navbar?.classList.add("scroll");
+      } else {
+        navbar?.classList.remove("scroll");
+      }
+    });
   });
   return (
     <nav className="navbar">

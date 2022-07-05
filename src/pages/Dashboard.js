@@ -17,7 +17,12 @@ const Dashboard = () => {
           error atque inventore exercitationem maxime quis repellendus dicta
           dolore voluptatibus?
         </p>
-        <button className="tour-btn">Take a quick tour</button>
+        <button
+          className="tour-btn"
+          onClick={() => alert("Service Unavailable")}
+        >
+          Take a quick tour
+        </button>
       </div>
       <img src={svg} alt="" />
     </section>

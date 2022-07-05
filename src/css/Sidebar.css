@@ -5,12 +5,12 @@
   width: 200px;
   padding: 10px 8px 10px 0;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
+  position: sticky;
 }
 
 .sidebar-section .pull-in-out {
   position: absolute;
-  top: 50%;
+  top: 30%;
   right: -35px;
   transform: rotate(45deg);
   width: 30px;
