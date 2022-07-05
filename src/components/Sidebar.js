@@ -47,19 +47,31 @@ const Sidebar = ({ updateState }) => {
     <section className="sidebar-section">
       <div className="pull-in-out" onClick={handleNavbar}></div>
       <li>
-        <NavLink to="/student/dashboard" className="sidebar-link">
+        <NavLink
+          to="/student/dashboard"
+          className="sidebar-link"
+          onClick={() => setnavHandle(false)}
+        >
           <MdOutlineSpaceDashboard className="sidebar-icons" />
           Dashboard
         </NavLink>
       </li>
       <li>
-        <NavLink to="/student/courses" className="sidebar-link">
+        <NavLink
+          to="/student/courses"
+          className="sidebar-link"
+          onClick={() => setnavHandle(false)}
+        >
           <GiBlackBook className="sidebar-icons" />
           Courses
         </NavLink>
       </li>
       <li>
-        <NavLink to="/student/profile" className="sidebar-link">
+        <NavLink
+          to="/student/profile"
+          className="sidebar-link"
+          onClick={() => setnavHandle(false)}
+        >
           <CgProfile className="sidebar-icons" />
           Profile
         </NavLink>
