@@ -8,10 +8,18 @@ import "../css/Navbar.css";
 
 const Navbar = ({ userState }) => {
   // const [userState, setUserState] = useState(false);
+
   // useEffect(() => {
   //   setUserState(JSON.parse(localStorage.getItem("access")));
   // }, []);
-
+  const navbar = document.querySelector(".navbar");
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 70) {
+      navbar?.classList.add("scroll");
+    } else {
+      navbar?.classList.remove("scroll");
+    }
+  });
   return (
     <nav className="navbar">
       <Link to="/">

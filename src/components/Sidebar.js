@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../css/Sidebar.css";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -11,6 +11,17 @@ import { signOut } from "firebase/auth";
 import { auth } from "../components/firebase";
 
 const Sidebar = ({ updateState }) => {
+  const [navHandle, setnavHandle] = useState(true);
+  useEffect(() => {
+    if (navHandle) {
+      sidebar?.classList.add("open");
+    } else {
+      sidebar?.classList.remove("open");
+    }
+  }, [navHandle]);
+
+  const sidebar = document.querySelector(".sidebar-section ");
+
   let navigate = useNavigate();
   const handleLogOut = (e) => {
     e.preventDefault();
@@ -27,8 +38,14 @@ const Sidebar = ({ updateState }) => {
         console.log(err.message);
       });
   };
+
+  const handleNavbar = () => {
+    setnavHandle(!navHandle);
+  };
+
   return (
     <section className="sidebar-section">
+      <div className="pull-in-out" onClick={handleNavbar}></div>
       <li>
         <NavLink to="/student/dashboard" className="sidebar-link">
           <MdOutlineSpaceDashboard className="sidebar-icons" />
