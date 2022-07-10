@@ -1,6 +1,6 @@
 .login-button {
   background-color: var(--color2);
-  padding: 0.8rem 1.7rem;
+  padding: 0.7rem 1.7rem;
   font-weight: bold;
   font-size: 1rem;
   color: var(--color1);
@@ -11,6 +11,6 @@
   transition: all 0.1s linear;
 }
 .login-button:hover {
-  /* box-shadow: 0px 0px 2px rgb(0, 0, 0); */
+  /* color: var(--color1); */
   background-color: #019123;
 }

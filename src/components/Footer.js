@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaInstagram, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
+
+// style sheets
 import "../css/Footer.css";
 
 const Footer = () => {
@@ -12,12 +16,29 @@ const Footer = () => {
         </Link>
       </div>
       <div>
-        <h3 className="footer-title">stay connected</h3>
+        <h3 className="footer-title">Connect with me </h3>
         <ul>
-          <li className="footer-links">Instagram</li>
-          <li className="footer-links">Facebook</li>
-          <li className="footer-links">LinkedIn</li>
-          <li className="footer-links">Twitter</li>
+          {" "}
+          <li className="footer-links">
+            <a href="https://linkedin.com/in/babatundeadeniyi" target="_blank">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li className="footer-links">
+            <a href="mailto:babatundeben110@gmail.com" target="_blank">
+              <AiOutlineMail />
+            </a>
+          </li>
+          <li className="footer-links">
+            <a href="https://github.com/Babatunde-Ben/" target="_blank">
+              <FaGithub />
+            </a>
+          </li>
+          <li className="footer-links">
+            <a href="#">
+              <FaTwitter />
+            </a>
+          </li>
         </ul>
       </div>
     </section>

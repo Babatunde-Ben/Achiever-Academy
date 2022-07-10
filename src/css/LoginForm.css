@@ -8,25 +8,35 @@
   align-items: center;
   width: 300;
 }
+.login-form label {
+  position: relative;
+}
+.login-form label .warning {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  color: var(--warning);
+}
 .login-form input {
   width: 100%;
-  border: 2px solid var(--color4);
+  border: 2px solid var(--color3);
   color: var(--color3);
   outline: none;
   border-radius: 3px;
-  padding: 10px 15px;
+  padding: 10px 24px 10px 15px;
   margin: 10px 0;
   background: none;
   font-size: 14px;
 }
 .login-form input.invalid {
-  border: 2px solid rgb(255, 134, 134);
+  border: 1px solid var(--warning);
 }
-.err-message {
+/* .err-message {
   transform: translateY(-5px);
-  color: rgb(255, 134, 134);
+  color: var(--warning);
   margin-bottom: 5px;
-}
+} */
 .login-form button {
   padding: 10px 25px;
   border-radius: 5px;

@@ -50,7 +50,7 @@
   /* border-radius: 15px; */
 }
 .sidebar-section li .sidebar-link.active {
-  border-left: 4px solid var(--color2);
+  border-left: 6px solid var(--color2);
 }
 
 .sidebar-section .sidebar-icons {
