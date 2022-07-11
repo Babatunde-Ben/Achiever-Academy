@@ -37,6 +37,20 @@
   color: var(--warning);
   margin-bottom: 5px;
 } */
+
+.login-form .cta {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.login-form .cta .create-account {
+  font-size: 14px;
+  color: rgb(36, 36, 251);
+  text-decoration: underline;
+}
+
 .login-form button {
   padding: 10px 25px;
   border-radius: 5px;
@@ -46,4 +60,6 @@
   outline: none;
   border: none;
   cursor: pointer;
+  margin-left: auto;
+  display: inline-block;
 }

@@ -1,9 +1,9 @@
 .sidebar-section {
   color: white;
   background-color: var(--color1);
-  height: calc(100vh);
-  width: 200px;
-  padding: 10px 8px 10px 0;
+  height: 100vh;
+  width: 220px;
+  padding: 10px 15px 10px 0;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   position: sticky;
 }
@@ -47,6 +47,7 @@
   padding: 4px 8px;
   display: inline-block;
   position: relative;
+
   /* border-radius: 15px; */
 }
 .sidebar-section li .sidebar-link.active {

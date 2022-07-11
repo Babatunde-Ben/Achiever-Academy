@@ -6,6 +6,7 @@ import "./css/App.css";
 // pages
 import LandingPage from "./pages/landing-page";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 import Student from "./pages/Student";
 import Dashboard from "./pages/Dashboard";
 import Courses from "./pages/Courses";
@@ -24,6 +25,10 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login updateState={updateState} />} />
+        <Route
+          path="/register"
+          element={<Register updateState={updateState} />}
+        />
         {userState && (
           <Route
             path="/student"

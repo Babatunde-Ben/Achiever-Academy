@@ -35,7 +35,7 @@ const Footer = () => {
             </a>
           </li>
           <li className="footer-links">
-            <a href="#">
+            <a href="/">
               <FaTwitter />
             </a>
           </li>
