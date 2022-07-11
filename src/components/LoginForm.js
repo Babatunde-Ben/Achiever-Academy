@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+
 import "../css/LoginForm.css";
 import { RiErrorWarningFill } from "react-icons/ri";
+
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
 // firebase
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth, provider } from "../components/firebase";
+
+const MySwal = withReactContent(Swal);
 
 const LoginForm = ({ updateState }) => {
   const [email, setEmail] = useState("");
@@ -30,21 +37,30 @@ const LoginForm = ({ updateState }) => {
     //   setIsValid(true);
     // }
     // sign-in
-    signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed in
-        // console.log(userCredential.user);
-        localStorage.setItem("user", JSON.stringify(userCredential.user));
-        setEmail("");
-        setPassword("");
-        updateState();
-        navigate("/student/dashboard");
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        console.log(error.message);
-      });
+    if (isEmail && isPassword) {
+      console.log("pass");
+      signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in
+          MySwal.fire({
+            title: "Logged In!",
+            icon: "success",
+          });
+          // console.log(userCredential.user);
+          localStorage.setItem("user", JSON.stringify(userCredential.user));
+          setEmail("");
+          setPassword("");
+          updateState();
+          navigate("/student/dashboard");
+        })
+        .catch((error) => {
+          const errorCode = error.code.slice(5).replace(/-/g, " ");
+          MySwal.fire({
+            title: errorCode,
+            icon: "warning",
+          });
+        });
+    }
   };
   return (
     <form className="login-form">
