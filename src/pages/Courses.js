@@ -6,12 +6,9 @@ import "../css/Courses.css";
 
 import db from "../components/db";
 
-const name = "English";
 const Courses = () => {
   const { userId } = useParams();
 
-  {
-  }
   return userId ? (
     <div>
       <CourseDetails id={userId} />

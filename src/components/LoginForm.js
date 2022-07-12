@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
 import "../css/LoginForm.css";
@@ -13,10 +13,11 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "../components/firebase";
+import { LoginContext } from "../Context/LoginContext";
 
 const MySwal = withReactContent(Swal);
 
-const LoginForm = ({ updateState, formType }) => {
+const LoginForm = ({ formType }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isPassword, setIsPassword] = useState(true);
@@ -25,6 +26,8 @@ const LoginForm = ({ updateState, formType }) => {
 
   // Regex for email validation
   let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+  const { setUserStatus } = useContext(LoginContext);
 
   useEffect(() => {
     setIsPassword(true);
@@ -45,9 +48,12 @@ const LoginForm = ({ updateState, formType }) => {
               icon: "success",
             });
             localStorage.setItem("user", JSON.stringify(userCredential.user));
+            setUserStatus(
+              localStorage.getItem("user", JSON.stringify(userCredential.user))
+            );
+
             setEmail("");
             setPassword("");
-            updateState();
             navigate("/student/dashboard");
           })
           .catch((error) => {
@@ -61,14 +67,17 @@ const LoginForm = ({ updateState, formType }) => {
         signInWithEmailAndPassword(auth, email, password)
           .then((userCredential) => {
             // Signed in
+            localStorage.setItem("user", JSON.stringify(userCredential.user));
+            setUserStatus(
+              localStorage.getItem("user", JSON.stringify(userCredential.user))
+            );
+
             MySwal.fire({
               title: "Logged In!",
               icon: "success",
             });
-            localStorage.setItem("user", JSON.stringify(userCredential.user));
             setEmail("");
             setPassword("");
-            updateState();
             navigate("/student/dashboard");
           })
           .catch((error) => {

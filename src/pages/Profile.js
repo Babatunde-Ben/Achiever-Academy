@@ -8,7 +8,6 @@ const Profile = () => {
   useEffect(() => {
     const status = JSON.parse(localStorage.getItem("user"));
     setUserState(status);
-    console.log(status);
   }, []);
 
   return (

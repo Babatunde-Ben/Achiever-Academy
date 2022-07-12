@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import LoginForm from "../components/LoginForm";
 import { FcGoogle } from "react-icons/fc";
 import { useNavigate } from "react-router-dom";
@@ -8,9 +8,11 @@ import StudentLogin from "../images/student-login.svg";
 // firebase
 import { signInWithPopup } from "firebase/auth";
 import { auth, provider } from "../components/firebase";
+import { LoginContext } from "../Context/LoginContext";
 
 const Register = ({ updateState }) => {
   let navigate = useNavigate();
+  const { setUserStatus } = useContext(LoginContext);
 
   const handleGoggleAuth = (e) => {
     e.preventDefault();
@@ -18,7 +20,7 @@ const Register = ({ updateState }) => {
     signInWithPopup(auth, provider)
       .then((res) => {
         localStorage.setItem("user", JSON.stringify(res.user));
-        updateState();
+        setUserStatus(localStorage.setItem("user", JSON.stringify(res.user)));
         navigate("/student/dashboard");
       })
       .catch((err) => {

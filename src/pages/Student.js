@@ -3,10 +3,10 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 import "../css/Student.css";
 
-const Student = ({ updateState }) => {
+const Student = () => {
   return (
     <section className="student-page">
-      <Sidebar updateState={updateState} />
+      <Sidebar />
 
       <Outlet />
     </section>

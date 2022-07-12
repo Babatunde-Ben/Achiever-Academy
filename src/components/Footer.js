@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaInstagram, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 
 // style sheets
@@ -20,17 +20,29 @@ const Footer = () => {
         <ul>
           {" "}
           <li className="footer-links">
-            <a href="https://linkedin.com/in/babatundeadeniyi" target="_blank">
+            <a
+              href="https://linkedin.com/in/babatundeadeniyi"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaLinkedin />
             </a>
           </li>
           <li className="footer-links">
-            <a href="mailto:babatundeben110@gmail.com" target="_blank">
+            <a
+              href="mailto:babatundeben110@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiOutlineMail />
             </a>
           </li>
           <li className="footer-links">
-            <a href="https://github.com/Babatunde-Ben/" target="_blank">
+            <a
+              href="https://github.com/Babatunde-Ben/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithub />
             </a>
           </li>

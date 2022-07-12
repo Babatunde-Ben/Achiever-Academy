@@ -41,6 +41,7 @@ code {
 .sidebar-article {
   padding: 50px 70px;
   width: 100%;
+  min-height: 25rem;
 }
 .logo {
   font-size: 1.2rem;
@@ -50,6 +51,7 @@ code {
 @media screen and (max-width: 480px) {
   .sidebar-article {
     padding: 40px 20px 155px;
+    min-height: 65vh;
   }
   .logo {
     font-size: 1rem;

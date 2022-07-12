@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const CourseDetails = ({ id }) => {
   let navigate = useNavigate();
   const singleCourse = db.find((item) => {
-    return item.id == id;
+    return item.id === id;
   });
   const ListItems = ({ item }) => {
     return <li>{item}</li>;

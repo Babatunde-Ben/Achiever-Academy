@@ -42,7 +42,7 @@
   width: 100%;
 }
 .sidebar-section li .sidebar-link {
-  color: var(--color2);
+  color: var(--color3);
   width: 100%;
   padding: 4px 8px;
   display: inline-block;
@@ -55,7 +55,7 @@
 }
 
 .sidebar-section .sidebar-icons {
-  color: var(--color2);
+  color: var(--color3);
   font-size: 20px;
   transform: translate(-25px, 2px);
   position: absolute;
@@ -80,7 +80,7 @@
   .sidebar-section {
     /* height: calc(100vh - 10vh); */
     width: 150px;
-    padding: 8px 5px 8px 0;
+    padding: 8px 8px 8px 0;
     left: -150px;
     position: fixed;
     z-index: 100;

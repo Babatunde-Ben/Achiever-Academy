@@ -1,18 +1,18 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import LoginButton from "./LoginButton";
 import DashboardButton from "./DashboardButton";
 
 import "../css/Navbar.css";
+import { LoginContext } from "../Context/LoginContext";
 
-const Navbar = ({ userState }) => {
-  // const [userState, setUserState] = useState(false);
+const Navbar = () => {
+  const { userStatus } = useContext(LoginContext);
 
   useEffect(() => {
     const navbar = document.querySelector(".navbar");
     window.addEventListener("scroll", () => {
-      // console.log(window.pageYOffset);
       if (window.pageYOffset > 10) {
         navbar?.classList.add("scroll");
       } else {
@@ -26,7 +26,7 @@ const Navbar = ({ userState }) => {
         <h1 className="logo">Achiever's Academy</h1>
       </Link>
 
-      {userState ? <DashboardButton /> : <LoginButton />}
+      {userStatus ? <DashboardButton /> : <LoginButton />}
     </nav>
   );
 };
