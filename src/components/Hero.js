@@ -1,6 +1,6 @@
 import React from "react";
 import student from "../images/student-in-library.jpg";
-import "../css/Hero.css";
+import "../css/HeroSection.css";
 import "../css/Navbar.css";
 
 const Hero = () => {
